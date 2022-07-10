@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+    <header id="header">
+        <img src="logo-social.png">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+	<section id="about" class="container">
+        <div class="row">
+            <div class="col-6"> 
+                <img src="IMG_0081.JPG">
+            </div>
+            <div class="col-6 noidungtrai">
+			  <h3>HELLO!</h3>
+                <h3>I'm Trần Tử Anh </h3>
+				<h4> Graphic Design</h4>
+            </div>
+        </div>
+    </section>
+	<div id="about me" class="text-center">
+	   <h1>About me</h1>
+	   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> veritatis odio molestiae eos totam porro neque a asperiores ducimus ipsum dolorem quod ipsam explicabo.</p>
+	</div>
+	<div class="container">
+            <div class="row text-center">
+                <div class="col-6">
+                    <img src="logoAI.png">
+                </div>
+                <div class="col-6">
+                    <img src="logopr.png">
+                </div>
+             </div> 
+             </div> 
+	<div class="banner" class="text-center">
+        <h1>Contact me by</h1>
+	</div>   
+    <section id="portfolio" class="text-center">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Social Media')">Social Media</button>
+            <button class="tablinks" onclick="openCity(event, 'My personal information')">My personal information</button>
+          </div>
+          
+          <!-- Tab content --> 
+          <div id="Social Media" class="tabcontent">
+            <div class="link">
+        <a href="https://www.facebook.com/profile.php?id=100010458390344"><i class="fa fa-facebook-official fa-3x"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+        <a href="#"><i class="fa fa-youtube fa-3x"></i></a>
+        <a href="#"><i class="fa fa-behance-square fa-3x"></i></a><br>
+          </div>
+		</div>
+		<div id="My personal information" class="tabcontent">
+            <div class="sodienthoai">
+				<div class="row">
+            <div class="col-4">
+                <span class="fa-stack fa-3x ">
+                    <i class="fa fa-circle fa-stack-2x icontron "></i>
+                    <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                </span>
+                <p>0901441xxx</p>
+            </div>
+            <div class="col-4">
+                <span class="fa-stack fa-3x ">
+                    <i class="fa fa-circle fa-stack-2x icontron"></i>
+                    <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                </span>
+                <p>Ho chi Minh, vietnam</p>
+            </div>
+            <div class="col-4">
+                <span class="fa-stack fa-3x  ">
+                    <i class="fa fa-circle fa-stack-2x icontron "></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <p>tuanh1062000@gmail.com</p>
+					</div>
+        </div>
+          </div>
+		</div>
+     <footer>
+	</footer>
+    <script>
+        function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+     </script>
+    
+</body>
+</html>
